@@ -1,0 +1,1478 @@
+/*==================================================
+        MALL INTERNATIONAL SHOP.COM
+        STYLE.CSS OFICIAL
+==================================================*/
+
+/*==================================================
+        1. IMPORTAR FUENTES
+==================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*==================================================
+        2. RESET GENERAL
+==================================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+/*==================================================
+        3. VARIABLES
+==================================================*/
+
+:root{
+
+    --color-dorado:#d4af37;
+
+    --color-dorado-claro:#f7dc6f;
+
+    --color-azul:#1b4f82;
+
+    --color-azul-oscuro:#163b61;
+
+    --color-blanco:#ffffff;
+
+    --color-texto:#f5f5f5;
+
+    --color-sombra:rgba(0,0,0,.45);
+
+}
+
+/*==================================================
+        4. BODY
+==================================================*/
+
+body{
+
+    font-family:'Roboto',sans-serif;
+
+    background:#edf3f9;
+
+    color:#222;
+
+    overflow-x:hidden;
+
+}
+
+/*==================================================
+        5. ENLACES
+==================================================*/
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/*==================================================
+        6. IMÁGENES
+==================================================*/
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+/*==================================================
+        7. HEADER PRINCIPAL
+==================================================*/
+
+#header{
+
+    width:100%;
+
+    background:linear-gradient(
+        to bottom,
+        var(--color-azul),
+        var(--color-azul-oscuro)
+    );
+
+    border-bottom:3px solid var(--color-dorado);
+
+    padding:10px 30px;
+
+}
+
+/*==================================================
+        8. LOGO
+==================================================*/
+.logo{
+
+    text-align:center;
+
+    margin-bottom:8px;
+
+}
+
+/*==================================================
+        9. TÍTULO PRINCIPAL
+==================================================*/
+
+.logo h1{
+
+    font-family:'Cinzel', serif;
+
+    font-size:2.45rem;
+
+    font-weight:700;
+
+    text-align:center;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:8px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        #fbe601 40%,
+        #f8e002 25%,
+        #ffdd02 30%,
+        #ffd700 45%,
+        #eed603 60%,
+        #ffd700 75%,
+        #fafe03 100%
+
+    );
+
+    background-size:250% auto;
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:
+
+        0 0px 0px rgba(255, 243, 12, 0.96),
+        0 1px 1px rgba(249, 249, 6, 0.953),
+        0 2px 2px rgba(91, 10, 3, 0.875);
+
+}
+
+
+/*==================================================
+        CONTENEDOR DEL TÍTULO
+==================================================*/
+.title-wrapper{
+
+    width:100%;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+/* Reflejo metálico */
+
+.title-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-35%;
+
+    width:18%;
+
+    height:100%;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent 0%,
+
+        rgba(42, 230, 101, 0.05) 20%,
+
+        rgba(255,255,255,.75) 50%,
+
+        rgba(255,255,210,.95) 60%,
+
+        rgba(9, 244, 123, 0.704) 80%,
+
+        transparent 100%
+
+    );
+
+    transform:skewX(-25deg);
+
+    animation:reflejoMall 18s infinite;
+
+}
+
+/*==================================================
+        TÍTULO ANIMADO
+==================================================*/
+
+.titulo-animado{
+
+    display:inline-block;
+
+    white-space:nowrap;
+
+    position:relative;
+
+    overflow:hidden;
+
+    animation:tituloMovimiento 18s linear infinite;
+
+}
+
+/*==================================================
+        10. SUBTÍTULO
+==================================================*/
+
+.logo h2{
+
+    font-family:'Cinzel',serif;
+
+    color:#f4f00c;
+
+    font-size:1.15rem;
+
+    font-weight:500;
+
+    margin-top:6px;
+
+}
+
+/*==================================================
+        11. DESCRIPCIÓN
+==================================================*/
+.logo p{
+
+    max-width:900px;
+
+    margin:10px auto 0;
+
+    text-align:center;
+
+    color:rgb(248, 252, 9);
+
+    line-height:1.6;
+
+    font-size:.95rem;
+
+}
+
+/*==================================================
+        12. MENÚ
+==================================================*/
+nav{
+
+    margin-top:8px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:28px;
+
+    list-style:none;
+
+    flex-wrap:wrap;
+
+}
+
+nav ul li a{
+
+    color:#ffe066;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+nav ul li a:hover{
+
+    color:rgb(240, 236, 14);
+
+}
+/*==================================================
+        13. BANNER DE PROMOCIONES
+==================================================*/
+
+#banner{
+
+    width:100%;
+
+    background:#FFD700;
+
+    overflow:hidden;
+
+    border-top:2px solid #c79a00;
+
+    border-bottom:2px solid #c79a00;
+
+}
+
+.banner-text{
+
+    padding:10px;
+
+    font-weight:bold;
+
+    color:#ad0909;
+
+    text-align:center;
+
+    font-size:1rem;
+
+}
+
+/*==================================================
+        14. ÁREA DEL CENTRO COMERCIAL
+==================================================*/
+#mall{
+
+    width:100%;
+
+    padding:25px 0 40px;
+
+}
+
+/*==================================================
+        15. CONTENEDOR DEL MALL
+==================================================*/
+#mall-container{
+
+    position:relative;
+
+    width:92%;
+
+    max-width:1500px;
+
+    margin:auto;
+
+}
+
+/*==================================================
+        16. IMAGEN PRINCIPAL
+==================================================*/
+#mall-image{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.30);
+
+}
+/*==================================================
+        17. VITRINAS
+==================================================*/
+.store{
+
+    position:absolute;
+
+    transform:translate(-50%,-50%);
+
+    z-index:20;
+
+}
+
+/*==================================================
+        18. OVERLAY
+==================================================*/
+.store-overlay{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+/*==================================================
+        19. WELCOME
+==================================================*/
+.welcome{
+
+    text-align:center;
+
+    background:rgba(0,0,0,.55);
+
+    padding:8px 14px;
+
+    border-radius:10px;
+
+    backdrop-filter:blur(4px);
+
+}
+
+.welcome span{
+
+    display:block;
+
+    color:#ffffff;
+
+    font-size:.72rem;
+
+    letter-spacing:2px;
+
+}
+
+.welcome strong{
+
+    display:block;
+
+    color:var(--color-dorado);
+
+    font-size:1rem;
+
+    margin-top:3px;
+
+    font-family:'Cinzel',serif;
+
+}
+
+/*==================================================
+        20. BOTÓN
+==================================================*/
+.btn-store{
+
+    width:54px;
+
+    height:54px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.4rem;
+
+    background:#0d6efd;
+
+    color:#ad1919;
+
+    transition:.30s;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.35);
+
+}
+
+/*==================================================
+        17. VITRINAS
+==================================================*/
+.store{
+
+    position:absolute;
+
+    transform:translate(-50%,-50%);
+
+    z-index:20;
+
+}
+
+/*==================================================
+        18. OVERLAY
+==================================================*/
+.store-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/*==================================================
+        19. WELCOME
+==================================================*/
+.welcome{
+    text-align:center;
+
+    background:rgba(0,0,0,.18);
+
+    border:1px solid rgba(230, 229, 222, 0.181);
+
+    padding:8px 14px;
+
+    border-radius:12px;
+
+    backdrop-filter:blur(2px);
+
+    -webkit-backdrop-filter:blur(2px);
+
+    box-shadow:0 4px 12px rgba(0,0,0,.20);
+
+}
+
+.welcome span{
+
+    display:block;
+
+    color:#fffb05;
+
+    font-size:.72rem;
+
+    letter-spacing:2px;
+
+}
+
+.welcome strong{
+
+    display:block;
+
+    color:var(--color-dorado);
+
+    font-size:1rem;
+
+    margin-top:3px;
+
+    font-family:'Cinzel',serif;
+
+}
+
+/*==================================================
+        20. BOTÓN
+==================================================*/
+.btn-store{
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    font-size:1.3rem;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#c4222b;
+
+    color:rgb(255, 247, 8);
+
+    text-decoration:none;
+
+    transition:.35s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.35);
+
+}
+/*==================================================
+        21. EFECTO HOVER
+==================================================*/
+
+.btn-store:hover{
+
+    transform:scale(1.12);
+
+}
+/*==================================================
+        22. POSICIÓN DE LAS VITRINAS
+==================================================*/
+
+/*------------- FILA SUPERIOR -------------*/
+
+.amazon{
+
+    top:41%;
+    left:17%;
+
+}
+
+.jd{
+
+    top:41%;
+    left:39%;
+
+}
+
+.aliexpress{
+
+    top:42%;
+    left:61%;
+
+}
+
+.bestbuy{
+
+    top:40%;
+    left:83%;
+
+}
+
+
+/*------------- FILA CENTRAL -------------*/
+
+.walmart{
+
+    top:61%;
+    left:17%;
+
+}
+
+.temu{
+
+    top:61%;
+    left:39%;
+
+}
+
+.shein{
+
+    top:61%;
+    left:61%;
+
+}
+
+.rockauto{
+
+    top:61%;
+    left:83%;
+
+}
+
+/*------------- FILA INFERIOR -------------*/
+
+.target{
+
+    top:80%;
+    left:20%;
+
+}
+
+.homedepot{
+
+    top:79%;
+    left:41%;
+
+}
+
+.etsy{
+
+    top:80%;
+    left:61%;
+
+}
+
+.lightinthebox{
+
+    top:80%;
+    left:81%;
+
+}
+/*==================================================
+        BANNER PUBLICITARIO ANIMADO
+==================================================*/
+#ad-banner{
+
+    width:95%;
+
+    height:70px;
+
+    margin:30px auto;
+
+    overflow:hidden;
+
+    position:relative;
+
+    background:#163b61;
+
+    border-top:2px solid var(--color-dorado);
+
+    border-bottom:2px solid var(--color-dorado);
+
+    border-radius:12px;
+
+}
+
+#ad-content{
+
+    position:absolute;
+
+    white-space:nowrap;
+
+    font-family:'Cinzel',serif;
+
+    font-size:1.2rem;
+
+    color:#FFD700;
+
+    top:20px;
+
+    animation:moverPublicidad 12s linear infinite;
+
+}
+
+@keyframes moverPublicidad{
+
+
+    from{
+
+        transform:translateX(100%);
+
+    }
+
+
+    to{
+
+        transform:translateX(-100%);
+
+    }
+
+
+}
+
+/*==================================================
+        CONTENEDORES PUBLICIDAD
+==================================================*/
+.publicidad-container{
+
+
+    width:95%;
+
+    margin:30px auto;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.publicidad-box{
+
+
+    min-height:120px;
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #163b61,
+
+        #1b4f82
+
+    );
+
+    border:2px solid var(--color-dorado);
+
+    border-radius:15px;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:rgb(251, 247, 15);
+
+    box-shadow:
+
+    0 8px 18px rgba(0,0,0,.25);
+
+}
+
+.publicidad-box h3{
+
+
+    font-family:'Cinzel',serif;
+
+    color:#FFD700;
+
+    letter-spacing:2px;
+
+}
+
+.publicidad-box p{
+
+
+    font-size:.95rem;
+
+}
+
+/*==================================================
+        DESCARGO DE RESPONSABILIDAD
+==================================================*/
+
+#legal{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin:25px auto 15px;
+
+}
+
+/*==================================================
+        CONTENEDORES LEGALES
+==================================================*/
+
+.legal-box{
+
+    width:96%;
+
+    max-width:1400px;
+
+    padding:14px 20px;
+
+    background:linear-gradient(135deg,#071c3f,#0d3f7a);
+
+    border:2px solid var(--color-dorado);
+
+    border-radius:16px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+
+}
+
+/*==================================================
+        TITULOS
+==================================================*/
+
+.legal-box h2{
+
+    margin:0 0 10px;
+
+    font-family:'Cinzel',serif;
+
+    font-size:.95rem;
+
+    color:var(--color-dorado);
+
+    letter-spacing:1px;
+
+}
+
+/*==================================================
+        TEXTO
+==================================================*/
+
+.legal-box p{
+
+    margin:3px 0;
+
+    color:#f4f810;
+
+    font-size:.90rem;
+
+    line-height:1.15;
+
+    text-align:justify;
+
+}
+
+/*==================================================
+        PROPIEDAD INTELECTUAL
+==================================================*/
+
+.legal.small{
+
+    padding:12px 20px;
+
+}
+
+.legal.small h2{
+
+    font-size:.95rem;
+
+    margin-bottom:3px;
+
+}
+
+.legal.small p{
+
+    font-size:.90rem;
+
+    line-height:1.30;
+
+}
+
+/*==================================================
+        RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+    .legal-box{
+
+        width:95%;
+
+        padding:12px 15px;
+
+    }
+
+    .legal-box h2{
+
+        font-size:.95rem;
+
+    }
+
+    .legal-box p{
+
+        font-size:.86rem;
+
+        line-height:1.28;
+
+    }
+
+}
+
+/*==================================================
+        23. FOOTER
+==================================================*/
+
+#FOOTER{
+
+    background:linear-gradient(
+        to bottom,
+        #1b4f82,
+        #163b61
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:22px;
+
+    border-top:3px solid var(--color-dorado);
+
+}
+
+#footer p{
+
+    margin:4px 0;
+
+    font-size:.92rem;
+
+    letter-spacing:.5px;
+
+}
+
+/*==================================================
+        24. RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+    .logo h1{
+
+        font-size:1.9rem;
+
+    }
+
+    nav ul{
+
+        gap:16px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .logo h1{
+
+        font-size:1.5rem;
+
+    }
+
+    .btn-store{
+
+        width:44px;
+
+        height:44px;
+
+        font-size:1.1rem;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .logo h1{
+
+        font-size:1.2rem;
+
+        letter-spacing:1px;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    .welcome{
+
+        display:none;
+
+    }
+
+}
+
+/*==================================================
+        23. FOOTER
+==================================================*/
+#footer{
+
+    background:var(--color-azul-oscuro);
+
+    color:rgb(254, 230, 8);
+
+    text-align:center;
+
+    padding:18px;
+
+    border-top:3px solid var(--color-dorado);
+
+}
+
+#footer p{
+
+    font-size:.85rem;
+
+}
+/*==================================================
+        24. RESPONSIVE
+==================================================*/
+@media(max-width:992px){
+
+    .logo h1{
+
+        font-size:1.9rem;
+
+    }
+
+    nav ul{
+
+        gap:16px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .logo h1{
+
+        font-size:1.5rem;
+
+    }
+
+    .btn-store{
+
+        width:44px;
+
+        height:44px;
+
+        font-size:1.1rem;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .logo h1{
+
+        font-size:1.2rem;
+
+        letter-spacing:1px;
+
+    }
+
+    nav ul{
+
+        flex-direction:column;
+
+        gap:10px;
+
+    }
+
+    .welcome{
+
+        display:none;
+
+    }
+
+}
+
+/*==================================================
+        MOVIMIENTO DEL TÍTULO
+==================================================*/
+@keyframes tituloMovimiento{
+
+    0%{
+
+        transform:translateX(-120%);
+
+    }
+
+    25%{
+
+        transform:translateX(0);
+
+    }
+
+    45%{
+
+        transform:translateX(0);
+
+    }
+
+    100%{
+
+        transform:translateX(120%);
+
+    }
+
+}
+/*==================================================
+        REFLEJO DEL TÍTULO
+==================================================*/
+
+@keyframes reflejoMall{
+
+    0%{
+
+        left:-40%;
+
+        opacity:0;
+
+    }
+
+    18%{
+
+        left:-40%;
+
+        opacity:0;
+
+    }
+
+    24%{
+
+        opacity:1;
+
+    }
+
+    34%{
+
+        left:120%;
+
+        opacity:1;
+
+    }
+
+    40%{
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        left:120%;
+
+        opacity:0;
+
+    }
+
+}
+/*==================================================
+        BANNER PRINCIPAL AFILIADOS
+==================================================*/
+
+#promo-banner{
+
+    width:94%;
+
+    max-width:1400px;
+
+    margin:30px auto;
+
+}
+
+.banner-container{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    padding:22px 28px;
+
+    background:linear-gradient(
+        180deg,
+        #0964d4,
+        #d6e409
+    );
+
+    border:2px solid rgba(212,175,55,.55);
+
+    border-radius:18px;
+
+    Box-shadow:
+    0 4px 12px rgba(0,0,0,.28),
+    0 0 8px rgba(255,215,0,.35);
+
+border:1px solid rgba(255,255,255,.25);
+}
+
+.banner-container:hover{
+
+    border-color:#52cfee;
+
+    box-shadow:
+        0 0 18px rgba(212,175,55,.25),
+        0 12px 30px rgba(0,0,0,.35);
+
+}
+Page Banner Image{
+
+    width:330px;
+
+    border-radius:12px;
+
+    border:1px solid rgba(212,175,55,.40);
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.25);
+
+}
+
+/*==================================================
+        BOTÓN DEL BANNER
+==================================================*/
+
+#banner-button{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    background:linear-gradient(
+        180deg,
+        #ffe95a,
+        #d4af37
+    );
+
+    color:#123d73;          /* Color del texto */
+
+    font-family:'Cinzel', serif;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+        0 5px 12px rgba(0,0,0,.30),
+        0 0 10px rgba(255,215,0,.35);
+
+    transition:.35s;
+
+}
+
+#banner-button:hover{
+
+    transform:translateY(-2px);
+
+    color:#f9ee19;
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.35),
+        0 0 16px rgba(255,215,0,.55);
+
+}
+
+
+/*==================================================
+        INFORMACIÓN PARA ANUNCIANTES
+==================================================*/
+
+#advertisers{
+
+    width:92%;
+    max-width:1100px;
+
+    margin:18px auto;
+
+}
+
+.advertisers-box{
+
+    background:linear-gradient(180deg,#053381fb,#971a35);
+
+    border:1px solid rgba(212,175,55,.45);
+
+    border-radius:14px;
+
+    padding:18px 28px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+}
+
+.advertisers-box h3{
+
+    color:var(--color-dorado);
+
+    font-family:'Cinzel',serif;
+
+    font-size:1.35rem;
+
+    margin-bottom:8px;
+
+    letter-spacing:1px;
+
+}
+
+.advertisers-box p{
+
+    color:#efe00b;
+
+    font-size:.95rem;
+
+    margin-bottom:14px;
+
+    line-height:1.5;
+
+}
+
+.advertisers-box a{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    border-radius:30px;
+
+    background:linear-gradient(90deg,#d4af37,#f7d76d);
+
+    color:#0441a4;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+    transition:.30s;
+
+}
+
+.advertisers-box a:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 0 18px rgba(212,175,55,.45);
+
+}/*==================================================
+        TÍTULO DEL BANNER PRINCIPAL
+==================================================*/
+
+#banner-title{
+
+    font-family:'Cinzel', serif;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:#d4af37;
+
+    letter-spacing:1px;
+
+    margin-bottom:14px;
+
+    text-shadow:
+        0 2px 3px rgba(0,0,0,.35),
+        0 0 8px rgba(212,175,55,.30);
+
+}
+/*==================================================
+        TEXTO DEL BANNER
+==================================================*/
+
+#banner-text{
+
+    color:#fcd703;
+
+    font-size:1rem;
+
+    line-height:1.6;
+
+    margin-bottom:18px;
+
+    text-shadow:
+        0 1px 2px rgba(0,0,0,.35);
+
+}
