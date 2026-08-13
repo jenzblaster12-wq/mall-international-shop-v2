@@ -1,47 +1,52 @@
-const ads = [
+/*==================================================*
+ * MALL INTERNATIONAL SHOP
+ * Sistema de Publicidad
+ *==================================================*/
 
-"🔥 AMAZON PRIME - OFERTAS ESPECIALES",
+const anuncios = [
 
-"🛒 GRANDES DESCUENTOS EN TIENDAS INTERNACIONALES",
+    "🔥 AMAZON PRIME - OFERTAS ESPECIALES",
 
-"⚡ TECNOLOGÍA, MODA Y HOGAR EN UN SOLO LUGAR",
+    "🛒 GRANDES DESCUENTOS EN TIENDAS INTERNACIONALES",
 
-"🚚 COMPRA INTERNACIONAL MÁS FÁCIL"
+    "⚡ TECNOLOGÍA, MODA Y HOGAR EN UN SOLO LUGAR",
+
+    "🚚 COMPRA INTERNACIONAL MÁS FÁCIL"
 
 ];
-
 
 let indice = 0;
 
 
-function cambiarPublicidad(){
+//--------------------------------------------------
+// Cambiar publicidad
+//--------------------------------------------------
 
+function cambiarPublicidad() {
 
-    const banner =
-    document.getElementById("ad-content");
-
+    const banner = document.getElementById("ad-content");
 
     indice++;
 
-
-    if(indice >= anuncios.length){
+    if (indice >= anuncios.length) {
 
         indice = 0;
 
     }
 
-
-    banner.textContent =
-    anuncios[indice];
-
+    banner.textContent = anuncios[indice];
 
 }
 
 
+//--------------------------------------------------
+// Cambiar cada 12 segundos
+//--------------------------------------------------
+
 setInterval(
 
-cambiarPublicidad,
+    cambiarPublicidad,
 
-12000
+    12000
 
 );

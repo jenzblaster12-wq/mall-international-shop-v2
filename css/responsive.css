@@ -1,0 +1,1251 @@
+/*==================================================
+        MALL INTERNATIONAL SHOP.COM
+        RESPONSIVE.CSS OFICIAL V2.0
+==================================================*/
+
+
+/*==================================================
+        1. AJUSTE GENERAL
+==================================================*/
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*==================================================
+        2. TABLET / PANTALLAS MEDIANAS
+        Hasta 992px
+==================================================*/
+
+@media (max-width: 992px) {
+
+    /*----------------------------------------------
+            HEADER
+    ----------------------------------------------*/
+
+    #header {
+        padding: 10px 20px;
+    }
+
+    .logo h1 {
+        font-size: 1.9rem;
+    }
+
+    .logo h2 {
+        font-size: 1rem;
+    }
+
+    .logo p {
+        max-width: 90%;
+        font-size: .88rem;
+        line-height: 1.45;
+    }
+
+    nav ul {
+        gap: 16px;
+    }
+
+
+    /*----------------------------------------------
+            BANNER
+    ----------------------------------------------*/
+
+    .banner-text {
+        font-size: .90rem;
+        padding: 9px;
+    }
+
+
+    /*----------------------------------------------
+            VITRINAS
+    ----------------------------------------------*/
+
+    .store-overlay {
+        gap: 8px;
+    }
+
+    .welcome {
+        padding: 6px 9px;
+        border-radius: 9px;
+    }
+
+    .welcome span {
+        font-size: .58rem;
+        letter-spacing: 1px;
+    }
+
+    .welcome strong {
+        font-size: .78rem;
+        margin-top: 2px;
+    }
+
+
+    /*----------------------------------------------
+            BOTONES
+            Conservamos 48px en escritorio.
+            Tablet comienza a reducir.
+    ----------------------------------------------*/
+
+    .btn-store {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+
+    /*----------------------------------------------
+            BANNER PUBLICITARIO
+    ----------------------------------------------*/
+
+    #ad-banner {
+        width: 94%;
+        height: 65px;
+        margin: 25px auto;
+    }
+
+    #ad-content {
+        font-size: 1rem;
+        top: 20px;
+    }
+
+
+    /*----------------------------------------------
+            PUBLICIDAD
+    ----------------------------------------------*/
+
+    .publicidad-container {
+        width: 94%;
+        gap: 20px;
+    }
+
+    .publicidad-box {
+        min-height: 110px;
+        padding: 15px;
+    }
+
+    .publicidad-box h3 {
+        font-size: 1.05rem;
+        text-align: center;
+    }
+
+    .publicidad-box p {
+        font-size: .88rem;
+        text-align: center;
+    }
+
+
+    /*----------------------------------------------
+            LEGAL
+    ----------------------------------------------*/
+
+    .legal-box {
+        width: 94%;
+        padding: 12px 15px;
+    }
+
+    .legal-box h2 {
+        font-size: .90rem;
+    }
+
+    .legal-box p {
+        font-size: .82rem;
+        line-height: 1.30;
+    }
+
+
+    /*----------------------------------------------
+            FOOTER
+    ----------------------------------------------*/
+
+    #footer {
+        padding: 18px;
+    }
+
+    #footer p {
+        font-size: .82rem;
+    }
+
+}
+
+
+/*==================================================
+        3. TABLET PEQUEÑA
+        Hasta 768px
+==================================================*/
+
+@media (max-width: 768px) {
+
+    /*----------------------------------------------
+            HEADER
+    ----------------------------------------------*/
+
+    #header {
+        padding: 9px 15px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1.5px;
+    }
+
+    .logo h2 {
+        font-size: .90rem;
+    }
+
+    .logo p {
+        font-size: .80rem;
+        line-height: 1.35;
+        max-width: 94%;
+    }
+
+
+    /*----------------------------------------------
+            MENÚ
+    ----------------------------------------------*/
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: .88rem;
+    }
+
+
+    /*----------------------------------------------
+            BANNER
+    ----------------------------------------------*/
+
+    .banner-text {
+        font-size: .78rem;
+        padding: 8px;
+    }
+
+
+    /*----------------------------------------------
+            MALL
+    ----------------------------------------------*/
+
+    #mall {
+        padding: 18px 0 30px;
+    }
+
+    #mall-container {
+        width: 94%;
+    }
+
+
+    /*----------------------------------------------
+            VITRINAS
+    ----------------------------------------------*/
+
+    .store-overlay {
+        gap: 6px;
+    }
+
+    .welcome {
+        padding: 5px 7px;
+        border-radius: 8px;
+    }
+
+    .welcome span {
+        font-size: .50rem;
+        letter-spacing: .8px;
+    }
+
+    .welcome strong {
+        font-size: .68rem;
+    }
+
+
+    /*----------------------------------------------
+            BOTONES
+    ----------------------------------------------*/
+
+    .btn-store {
+        width: 35px;
+        height: 35px;
+        font-size: .90rem;
+    }
+
+
+    /*----------------------------------------------
+            LIGHTINTHEBOX
+    ----------------------------------------------*/
+
+    .lightinthebox .welcome strong {
+        font-size: .62rem;
+        letter-spacing: -.2px;
+        white-space: nowrap;
+    }
+
+
+    /*----------------------------------------------
+            BANNER PUBLICITARIO
+    ----------------------------------------------*/
+
+    #ad-banner {
+        width: 92%;
+        height: 60px;
+        margin: 22px auto;
+    }
+
+    #ad-content {
+        font-size: .88rem;
+        top: 19px;
+    }
+
+
+    /*----------------------------------------------
+            PUBLICIDAD
+    ----------------------------------------------*/
+
+    .publicidad-container {
+        width: 92%;
+        margin: 25px auto;
+        gap: 18px;
+    }
+
+    .publicidad-box {
+        min-height: 100px;
+        padding: 14px;
+    }
+
+    .publicidad-box h3 {
+        font-size: .95rem;
+        letter-spacing: 1px;
+    }
+
+    .publicidad-box p {
+        font-size: .82rem;
+        line-height: 1.35;
+        text-align: center;
+    }
+
+
+    /*----------------------------------------------
+            LEGAL
+    ----------------------------------------------*/
+
+    .legal-box {
+        width: 92%;
+        padding: 11px 13px;
+    }
+
+    .legal-box h2 {
+        font-size: .85rem;
+    }
+
+    .legal-box p {
+        font-size: .78rem;
+        line-height: 1.28;
+    }
+
+
+    /*----------------------------------------------
+            FOOTER
+    ----------------------------------------------*/
+
+    #footer {
+        padding: 16px 12px;
+    }
+
+    #footer p {
+        font-size: .76rem;
+    }
+
+}
+
+
+/*==================================================
+        4. MÓVIL
+        Hasta 600px
+==================================================*/
+
+@media (max-width: 600px) {
+
+    /*----------------------------------------------
+            HEADER
+    ----------------------------------------------*/
+
+    #header {
+        padding: 8px 10px;
+    }
+
+    .logo h1 {
+        font-size: 1.20rem;
+        letter-spacing: 1px;
+    }
+
+    .logo h2 {
+        font-size: .76rem;
+        margin-top: 4px;
+    }
+
+    .logo p {
+        max-width: 96%;
+        font-size: .68rem;
+        line-height: 1.30;
+        margin-top: 7px;
+    }
+
+
+    /*----------------------------------------------
+            MENÚ
+    ----------------------------------------------*/
+
+    nav {
+        margin-top: 6px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px 14px;
+    }
+
+    nav ul li a {
+        font-size: .72rem;
+    }
+
+
+    /*----------------------------------------------
+            BANNER
+    ----------------------------------------------*/
+
+    #banner {
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+    }
+
+    .banner-text {
+        font-size: .65rem;
+        padding: 7px 5px;
+        line-height: 1.25;
+    }
+
+
+    /*----------------------------------------------
+            MALL
+    ----------------------------------------------*/
+
+    #mall {
+        padding: 12px 0 22px;
+    }
+
+    #mall-container {
+        width: 96%;
+    }
+
+
+    /*----------------------------------------------
+            VITRINAS
+    ----------------------------------------------*/
+
+    .store-overlay {
+        gap: 4px;
+    }
+
+
+    /*----------------------------------------------
+            WELCOME
+            Importante:
+            style.css intentaba ocultarlo.
+            Aquí lo mantenemos visible.
+    ----------------------------------------------*/
+
+    .welcome {
+        display: block;
+
+        padding: 3px 5px;
+
+        border-radius: 6px;
+    }
+
+    .welcome span {
+        font-size: .38rem;
+        letter-spacing: .5px;
+    }
+
+    .welcome strong {
+        font-size: .50rem;
+        margin-top: 1px;
+    }
+
+
+    /*----------------------------------------------
+            BOTONES
+    ----------------------------------------------*/
+
+    .btn-store {
+        width: 30px;
+        height: 30px;
+
+        font-size: .76rem;
+
+        box-shadow: 0 3px 8px rgba(0,0,0,.30);
+    }
+
+
+    /*----------------------------------------------
+            POSICIONES MÓVILES
+            Las dos primeras filas permanecen
+            prácticamente en su posición original.
+            La tercera sube para evitar las personas.
+    ----------------------------------------------*/
+
+    .amazon {
+        top: 41%;
+        left: 17%;
+    }
+
+    .jd {
+        top: 41%;
+        left: 39%;
+    }
+
+    .aliexpress {
+        top: 42%;
+        left: 61%;
+    }
+
+    .bestbuy {
+        top: 40%;
+        left: 83%;
+    }
+
+
+    .walmart {
+        top: 61%;
+        left: 17%;
+    }
+
+    .temu {
+        top: 61%;
+        left: 39%;
+    }
+
+    .shein {
+        top: 61%;
+        left: 61%;
+    }
+
+    .rockauto {
+        top: 61%;
+        left: 83%;
+    }
+
+
+    /*----------------------------------------------
+            TERCERA FILA
+            Primer ajuste móvil
+    ----------------------------------------------*/
+
+    .target {
+        top: 75%;
+        left: 20%;
+    }
+
+    .homedepot {
+        top: 75%;
+        left: 41%;
+    }
+
+    .etsy {
+        top: 75%;
+        left: 61%;
+    }
+
+    .lightinthebox {
+        top: 75%;
+        left: 81%;
+    }
+
+
+    /*----------------------------------------------
+            LIGHTINTHEBOX
+    ----------------------------------------------*/
+
+    .lightinthebox .welcome {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .lightinthebox .welcome strong {
+        font-size: .45rem;
+        letter-spacing: -.4px;
+        white-space: nowrap;
+    }
+
+
+    /*----------------------------------------------
+            BANNER PUBLICITARIO
+    ----------------------------------------------*/
+
+    #ad-banner {
+        width: 94%;
+        height: 52px;
+        margin: 18px auto;
+
+        border-radius: 9px;
+    }
+
+    #ad-content {
+        font-size: .72rem;
+        top: 16px;
+    }
+
+
+    /*----------------------------------------------
+            PUBLICIDAD
+    ----------------------------------------------*/
+
+    .publicidad-container {
+        width: 94%;
+        margin: 20px auto;
+        gap: 15px;
+    }
+
+    .publicidad-box {
+        min-height: 90px;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    .publicidad-box h3 {
+        font-size: .82rem;
+        letter-spacing: .8px;
+        text-align: center;
+    }
+
+    .publicidad-box p {
+        font-size: .72rem;
+        line-height: 1.30;
+        text-align: center;
+    }
+
+
+    /*----------------------------------------------
+            LEGAL
+    ----------------------------------------------*/
+
+    #legal {
+        gap: 12px;
+        margin: 18px auto 12px;
+    }
+
+    .legal-box {
+        width: 94%;
+        padding: 10px 11px;
+        border-radius: 12px;
+    }
+
+    .legal-box h2 {
+        font-size: .72rem;
+        margin-bottom: 7px;
+    }
+
+    .legal-box p {
+        font-size: .68rem;
+        line-height: 1.25;
+        text-align: justify;
+    }
+
+    .legal.small {
+        padding: 10px 11px;
+    }
+
+    .legal.small h2 {
+        font-size: .72rem;
+    }
+
+    .legal.small p {
+        font-size: .68rem;
+        line-height: 1.25;
+    }
+
+
+    /*----------------------------------------------
+            FOOTER
+    ----------------------------------------------*/
+
+    #footer {
+        padding: 14px 10px;
+    }
+
+    #footer p {
+        font-size: .65rem;
+        line-height: 1.30;
+    }
+
+}
+
+
+/*==================================================
+        5. MÓVIL PEQUEÑO
+        Hasta 480px
+==================================================*/
+
+@media (max-width: 480px) {
+
+    /*----------------------------------------------
+            HEADER
+    ----------------------------------------------*/
+
+    .logo h1 {
+        font-size: 1.02rem;
+    }
+
+    .logo h2 {
+        font-size: .68rem;
+    }
+
+    .logo p {
+        font-size: .62rem;
+    }
+
+
+    /*----------------------------------------------
+            MENÚ
+    ----------------------------------------------*/
+
+    nav ul {
+        gap: 6px 10px;
+    }
+
+    nav ul li a {
+        font-size: .65rem;
+    }
+
+
+    /*----------------------------------------------
+            BANNER
+    ----------------------------------------------*/
+
+    .banner-text {
+        font-size: .58rem;
+        padding: 6px 4px;
+    }
+
+
+    /*----------------------------------------------
+            MALL
+    ----------------------------------------------*/
+
+    #mall-container {
+        width: 97%;
+    }
+
+
+    /*----------------------------------------------
+            WELCOME
+    ----------------------------------------------*/
+
+    .welcome {
+        padding: 2px 4px;
+    }
+
+    .welcome span {
+        font-size: .33rem;
+        letter-spacing: .35px;
+    }
+
+    .welcome strong {
+        font-size: .43rem;
+    }
+
+
+    /*----------------------------------------------
+            BOTONES
+    ----------------------------------------------*/
+
+    .btn-store {
+        width: 27px;
+        height: 27px;
+        font-size: .68rem;
+    }
+
+
+    /*----------------------------------------------
+            LIGHTINTHEBOX
+    ----------------------------------------------*/
+
+    .lightinthebox .welcome strong {
+        font-size: .39rem;
+        letter-spacing: -.5px;
+    }
+
+
+    /*----------------------------------------------
+            TERCERA FILA
+    ----------------------------------------------*/
+
+    .target,
+    .homedepot,
+    .etsy,
+    .lightinthebox {
+        top: 74%;
+    }
+
+
+    /*----------------------------------------------
+            PUBLICIDAD
+    ----------------------------------------------*/
+
+    .publicidad-box {
+        min-height: 82px;
+    }
+
+    .publicidad-box h3 {
+        font-size: .74rem;
+    }
+
+    .publicidad-box p {
+        font-size: .66rem;
+    }
+
+
+    /*----------------------------------------------
+            LEGAL
+    ----------------------------------------------*/
+
+    .legal-box p,
+    .legal.small p {
+        font-size: .63rem;
+    }
+
+}
+
+
+/*==================================================
+        6. MÓVIL MUY PEQUEÑO
+        Hasta 360px
+==================================================*/
+
+@media (max-width: 360px) {
+
+    .logo h1 {
+        font-size: .90rem;
+    }
+
+    .logo h2 {
+        font-size: .62rem;
+    }
+
+    .logo p {
+        font-size: .57rem;
+    }
+
+    nav ul li a {
+        font-size: .60rem;
+    }
+
+    .welcome span {
+        font-size: .30rem;
+    }
+
+    .welcome strong {
+        font-size: .39rem;
+    }
+
+    .btn-store {
+        width: 25px;
+        height: 25px;
+        font-size: .62rem;
+    }
+
+    .lightinthebox .welcome strong {
+        font-size: .35rem;
+    }
+
+    .legal-box p,
+    .legal.small p {
+        font-size: .58rem;
+    }
+
+}
+
+/*==================================================
+        INFORMACIÓN LEGAL DESPLEGABLE
+==================================================*/
+
+#legal {
+    width: 100%;
+
+    margin: 20px auto 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*==================================================
+        CONTENEDOR
+==================================================*/
+
+#legal .legal-box {
+    width: 92%;
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: #084298;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+}
+
+
+/*==================================================
+        CABECERA DESPLEGABLE
+==================================================*/
+
+#legal .legal-box summary {
+    padding: 6px 12px;
+
+    cursor: pointer;
+
+    list-style: none;
+
+    color: #fffb05;
+
+    font-size: .72rem;
+
+    font-weight: bold;
+
+    line-height: 1.2;
+
+    text-align: center;
+
+    user-select: none;
+}
+
+
+/* Elimina el marcador predeterminado */
+
+#legal .legal-box summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/*==================================================
+        FLECHA
+==================================================*/
+
+.legal-toggle {
+    display: inline-block;
+
+    margin-left: 5px;
+
+    color: #fffb05;
+
+    transition: transform .25s ease;
+}
+
+
+/* Cambia la flecha al abrir */
+
+#legal .legal-box[open] .legal-toggle {
+    transform: rotate(180deg);
+}
+
+
+/*==================================================
+        CONTENIDO
+==================================================*/
+
+#legal .legal-content {
+    padding: 5px 18px 8px;
+
+    color: #fffb05;
+
+    text-align: center;
+}
+
+
+/*==================================================
+        PÁRRAFOS
+==================================================*/
+
+#legal .legal-content p {
+    color: #fffb05;
+
+    font-size: .70rem;
+
+    line-height: 1.3;
+
+    margin: 4px 0;
+}
+
+
+/*==================================================
+        PROPIEDAD INTELECTUAL
+==================================================*/
+
+#legal .legal-property {
+
+    margin-top: 7px;
+
+    padding-top: 5px;
+
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+
+
+#legal .legal-property h2 {
+
+    color: #fffb05;
+
+    font-size: .72rem;
+
+    line-height: 1.15;
+
+    margin: 0 0 4px;
+}
+
+
+#legal .legal-property p {
+
+    color: #fffb05;
+
+    font-size: .70rem;
+
+    line-height: 1.25;
+
+    margin: 4px 0;
+}
+
+
+/*==================================================
+        COPYRIGHT
+==================================================*/
+
+#legal .legal-copyright {
+
+    margin-top: 7px;
+
+    padding-top: 5px;
+
+    border-top: 1px solid rgba(255,255,255,.15);
+
+    color: #fffb05;
+
+    font-size: .68rem;
+
+    line-height: 1.25;
+
+    text-align: center;
+}
+
+
+#legal .legal-copyright strong,
+#legal .legal-copyright span {
+
+    color: #fffb05;
+}
+
+
+/*==================================================
+        CONTACTO
+==================================================*/
+
+#legal .legal-contact {
+
+    margin-top: 5px;
+
+    padding-top: 4px;
+
+    color: #fffb05;
+
+    font-size: .68rem;
+
+    line-height: 1.25;
+
+    text-align: center;
+}
+
+
+#legal .legal-contact strong {
+
+    color: #fffb05;
+}
+
+
+#legal .legal-contact a {
+
+    color: #fffb05;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+#legal .legal-contact a:hover {
+
+    color: #fffb05;
+
+    text-decoration: underline;
+}
+
+
+/*==================================================
+        MÓVIL
+==================================================*/
+
+@media (max-width: 600px) {
+
+    #legal {
+
+        margin: 16px auto 3px;
+    }
+
+
+    #legal .legal-box {
+
+        width: 94%;
+    }
+
+
+    #legal .legal-box summary {
+
+        padding: 6px 9px;
+
+        font-size: .62rem;
+    }
+
+
+    #legal .legal-content {
+
+        padding: 5px 10px 7px;
+    }
+
+
+    #legal .legal-content p {
+
+        font-size: .64rem;
+
+        line-height: 1.28;
+
+        margin: 4px 0;
+    }
+
+
+    #legal .legal-property {
+
+        margin-top: 5px;
+
+        padding-top: 4px;
+    }
+
+
+    #legal .legal-property h2 {
+
+        font-size: .67rem;
+
+        margin-bottom: 3px;
+    }
+
+
+    #legal .legal-property p {
+
+        font-size: .62rem;
+
+        line-height: 1.26;
+
+        margin: 2px 0;
+    }
+
+
+    #legal .legal-copyright {
+
+        margin-top: 5px;
+
+        padding-top: 4px;
+
+        font-size: .60rem;
+
+        line-height: 1.18;
+    }
+
+
+    #legal .legal-contact {
+
+        margin-top: 4px;
+
+        padding-top: 3px;
+
+        font-size: .60rem;
+    }
+
+}
+
+
+/*==================================================
+        MÓVIL PEQUEÑO
+==================================================*/
+
+@media (max-width: 360px) {
+
+    #legal .legal-box {
+
+        width: 95%;
+
+        padding: 0 2px;
+    }
+
+
+    #legal .legal-box summary {
+
+        font-size: .59rem;
+    }
+
+
+    #legal .legal-content p {
+
+        font-size: .59rem;
+
+        line-height: 1.25;
+    }
+
+
+    #legal .legal-property h2 {
+
+        font-size: .62rem;
+    }
+
+
+    #legal .legal-property p {
+
+        font-size: .57rem;
+
+        line-height: 1.15;
+    }
+
+
+    #legal .legal-copyright {
+
+        font-size: .55rem;
+    }
+
+
+    #legal .legal-contact {
+
+        font-size: .55rem;
+    }
+
+}
