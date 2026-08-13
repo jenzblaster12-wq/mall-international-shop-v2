@@ -1476,3 +1476,65 @@ Page Banner Image{
         0 1px 2px rgba(0,0,0,.35);
 
 }
+/*==================================================
+    ANUNCIOS COMERCIALES
+==================================================*/
+
+.anuncio-activo {
+
+    position: relative;
+
+    overflow: hidden;
+
+    cursor: pointer;
+
+}
+
+
+.anuncio-video,
+.anuncio-imagen {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.anuncio-placeholder {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+}
+
+
+.anuncio-placeholder h3 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.anuncio-placeholder p {
+
+    margin: 0;
+
+}
