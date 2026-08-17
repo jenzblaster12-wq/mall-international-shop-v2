@@ -86,7 +86,6 @@ const PROMOCIONES = [
 
     tienda: "amazon",
 
-    enlace: "https://amzn.to/45pBEXD",
 
     fechaInicio: "2026-01-01",
 

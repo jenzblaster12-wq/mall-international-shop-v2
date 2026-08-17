@@ -25,18 +25,19 @@ const ANUNCIOS_COMERCIALES = [
     {
         id: "anuncio-001",
 
-        empresa: "Espacio Publicitario 1",
+        empresa: "Mall International Shop",
 
         activo: true,
 
-        titulo: "ESPACIO PUBLICITARIO",
+        titulo: "DESCUBRE MALL INTERNATIONAL SHOP",
 
         descripcion:
-            "Disponible para campañas, promociones y acuerdos comerciales.",
+            "Explora tiendas internacionales, compara y encuentra tus próximas compras.",
 
         video: "",
 
-        imagen: "",
+        imagen:
+            "images/publicidad/mall-international-shop.png",
 
         enlace: "#",
 
@@ -198,6 +199,7 @@ function mostrarAnuncio(anuncio) {
         console.warn(
 
             "No se encontró el espacio:",
+
             anuncio.espacio
 
         );
@@ -254,6 +256,7 @@ function mostrarAnuncio(anuncio) {
 
     }
 
+
     //==================================================
     // IMAGEN
     //==================================================
@@ -275,6 +278,7 @@ function mostrarAnuncio(anuncio) {
         `;
 
     }
+
 
     //==================================================
     // SIN MATERIAL
@@ -305,10 +309,13 @@ function mostrarAnuncio(anuncio) {
     // CONTENIDO COMPLETO
     //==================================================
 
-    espacio.innerHTML = contenido;
+    espacio.innerHTML =
+        contenido;
 
-    espacio.classList.add("active-ad");
-    
+    espacio.classList.add(
+        "active-ad"
+    );
+
 
     //==================================================
     // ENLACE DEL ANUNCIANTE
@@ -319,22 +326,37 @@ function mostrarAnuncio(anuncio) {
         anuncio.enlace !== "#"
     ) {
 
-        espacio.style.cursor = "pointer";
+        espacio.style.cursor =
+            "pointer";
 
 
-        espacio.onclick = function () {
+        espacio.onclick =
+            function () {
 
-            window.open(
+                if (
+                    anuncio.enlace.startsWith(
+                        "mailto:"
+                    )
+                ) {
 
-                anuncio.enlace,
+                    window.location.href =
+                        anuncio.enlace;
 
-                "_blank",
+                } else {
 
-                "noopener,noreferrer"
+                    window.open(
 
-            );
+                        anuncio.enlace,
 
-        };
+                        "_blank",
+
+                        "noopener,noreferrer"
+
+                    );
+
+                }
+
+            };
 
     }
 

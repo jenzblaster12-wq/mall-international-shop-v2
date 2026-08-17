@@ -587,9 +587,9 @@ nav ul li a:hover{
     justify-content:center;
     align-items:center;
 
-    background:#c4222b;
+    background:#fdf907b2;
 
-    color:rgb(255, 247, 8);
+    color:rgb(255, 37, 8);
 
     text-decoration:none;
 
@@ -1536,5 +1536,67 @@ Page Banner Image{
 .anuncio-placeholder p {
 
     margin: 0;
+
+}
+/*==================================================
+    ESPACIOS PUBLICITARIOS COMERCIALES
+==================================================*/
+
+.publicidad-etiqueta {
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.publicidad-box h3 {
+
+    margin: 10px 0;
+
+}
+
+
+.publicidad-box p {
+
+    max-width: 420px;
+
+    margin: 0 auto 20px;
+
+    line-height: 1.6;
+
+}
+
+
+.publicidad-contacto {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: 1px solid currentColor;
+
+    transition: transform 0.2s ease,
+                opacity 0.2s ease;
+
+}
+
+
+.publicidad-contacto:hover {
+
+    transform: scale(1.04);
+
+    opacity: 0.85;
 
 }

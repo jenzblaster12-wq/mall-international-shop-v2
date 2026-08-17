@@ -24,6 +24,55 @@ function obtenerBanners() {
 
 
 //==================================================
+// IMÁGENES DE RESPALDO
+//==================================================
+
+const IMAGENES_BANNER_RESPALDO = {
+
+    amazon:
+        "images/banner/amazon-logo.png",
+
+    aliexpress:
+        "images/banner/aliexpress-logo.png"
+
+};
+
+
+//==================================================
+// OBTENER IMAGEN DE RESPALDO
+//==================================================
+
+function obtenerImagenRespaldo(banner) {
+
+    if (!banner) {
+
+        return "";
+
+    }
+
+
+    const tienda =
+        banner.tienda ||
+        banner.id ||
+        "";
+
+
+    if (
+        tienda &&
+        IMAGENES_BANNER_RESPALDO[tienda]
+    ) {
+
+        return IMAGENES_BANNER_RESPALDO[tienda];
+
+    }
+
+
+    return "";
+
+}
+
+
+//==================================================
 // MOSTRAR BANNER
 //==================================================
 
@@ -63,9 +112,14 @@ function mostrarBanner(indice) {
 
     if (imagen) {
 
+        const imagenRespaldo =
+            obtenerImagenRespaldo(banner);
+
+
         /*
-        Intentamos cargar la imagen indicada
-        por la promoción.
+        Si la imagen principal no existe,
+        utilizamos automáticamente el logo
+        correspondiente.
         */
 
         imagen.onerror = function () {
@@ -75,12 +129,42 @@ function mostrarBanner(indice) {
                 banner.imagen
             );
 
-            /*
-            Ocultamos la imagen para evitar
-            mostrar un espacio roto.
-            */
 
-            imagen.style.display = "none";
+            if (
+                imagenRespaldo &&
+                imagen.src.indexOf(
+                    imagenRespaldo
+                ) === -1
+            ) {
+
+                console.log(
+                    "Usando imagen de respaldo:",
+                    imagenRespaldo
+                );
+
+
+                imagen.src =
+                    imagenRespaldo;
+
+                imagen.alt =
+                    banner.empresa +
+                    " - " +
+                    banner.titulo;
+
+                imagen.style.display =
+                    "";
+
+            } else {
+
+                /*
+                Si tampoco existe el respaldo,
+                ocultamos la imagen.
+                */
+
+                imagen.style.display =
+                    "none";
+
+            }
 
         };
 
@@ -88,8 +172,8 @@ function mostrarBanner(indice) {
         imagen.onload = function () {
 
             /*
-            Si anteriormente estuvo oculta,
-            volvemos a mostrarla cuando exista.
+            Mostramos nuevamente la imagen
+            cuando la carga correctamente.
             */
 
             imagen.style.display = "";
@@ -99,16 +183,36 @@ function mostrarBanner(indice) {
 
         if (banner.imagen) {
 
-            imagen.src = banner.imagen;
+            imagen.style.display = "";
+
+            imagen.src =
+                banner.imagen;
 
             imagen.alt =
                 banner.empresa +
                 " - " +
                 banner.titulo;
 
-        } else {
+        }
 
-            imagen.style.display = "none";
+        else if (imagenRespaldo) {
+
+            imagen.style.display = "";
+
+            imagen.src =
+                imagenRespaldo;
+
+            imagen.alt =
+                banner.empresa +
+                " - " +
+                banner.titulo;
+
+        }
+
+        else {
+
+            imagen.style.display =
+                "none";
 
         }
 

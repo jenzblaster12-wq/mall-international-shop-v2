@@ -110,6 +110,9 @@
          alt="Mall International Shop"
          id="mall-image">
 
+
+
+
 <!-- ============================================ -->
 <!-- AMAZON -->
 <!-- ============================================ -->
@@ -130,7 +133,7 @@
            target="_blank"
            rel="noopener noreferrer"
            title="Entrar a Amazon"
-           onclick="this.href = obtenerEnlaceAfiliado('amazon');">
+           onclick="registrarClicTienda('amazon'); this.href = obtenerEnlaceAfiliado('amazon');">
 
             ⏻
 
@@ -139,7 +142,6 @@
     </div>
 
 </div>
-
 
 <!-- ============================================ -->
 <!-- JD.COM -->
@@ -156,11 +158,12 @@
 
         </div>
 
-        <a href="https://www.jd.com"
+        <a href="#"
            class="btn-store"
            target="_blank"
            rel="noopener noreferrer"
-           title="Entrar a JD.COM">
+           title="Entrar a JD.COM"
+           onclick="registrarClicTienda('jd'); this.href = obtenerEnlaceAfiliado('jd');">
 
             ⏻
 
@@ -186,11 +189,43 @@
 
         </div>
 
-        <a href="https://www.aliexpress.com"
+        <a href="#"
            class="btn-store"
            target="_blank"
            rel="noopener noreferrer"
-           title="Entrar a AliExpress">
+           title="Entrar a AliExpress"
+           onclick="
+               registrarClicTienda('aliexpress');
+               this.href = obtenerEnlaceAfiliado('aliexpress');
+           ">
+
+            ⏻
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ============================================ -->
+<!-- BEST BUY -->
+<!-- ============================================ -->
+
+<div class="store bestbuy">
+
+    <div class="store-overlay">
+
+        <div class="welcome">
+            <span>WELCOME</span>
+            <strong>BEST BUY</strong>
+        </div>
+
+        <a href="https://www.bestbuy.com"
+           class="btn-store"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Entrar a Best Buy"
+           onclick="registrarClicTienda('bestbuy');">
 
             ⏻
 
@@ -201,134 +236,118 @@
 </div>
 
 
-    <!-- ============================================ -->
-    <!-- BEST BUY -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!-- WALMART -->
+<!-- ============================================ -->
 
-    <div class="store bestbuy">
+<div class="store walmart">
 
-        <div class="store-overlay">
+    <div class="store-overlay">
 
-            <div class="welcome">
-                <span>WELCOME</span>
-                <strong>BEST BUY</strong>
-            </div>
-
-            <a href="https://www.bestbuy.com"
-               class="btn-store"
-               target="_blank"
-               rel="noopener noreferrer"
-               title="Entrar a Best Buy">
-                ⏻
-            </a>
-
+        <div class="welcome">
+            <span>WELCOME</span>
+            <strong>WALMART</strong>
         </div>
+
+        <a href="https://www.walmart.com"
+           class="btn-store"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Entrar a Walmart"
+           onclick="registrarClicTienda('walmart');">
+
+            ⏻
+
+        </a>
 
     </div>
 
+</div>
 
-    <!-- ============================================ -->
-    <!-- WALMART -->
-    <!-- ============================================ -->
 
-    <div class="store walmart">
+<!-- ============================================ -->
+<!-- TEMU -->
+<!-- ============================================ -->
 
-        <div class="store-overlay">
+<div class="store temu">
 
-            <div class="welcome">
-                <span>WELCOME</span>
-                <strong>WALMART</strong>
-            </div>
+    <div class="store-overlay">
 
-            <a href="https://www.walmart.com"
-               class="btn-store"
-               target="_blank"
-               rel="noopener noreferrer"
-               title="Entrar a Walmart">
-                ⏻
-            </a>
-
+        <div class="welcome">
+            <span>WELCOME</span>
+            <strong>TEMU</strong>
         </div>
+
+        <a href="https://www.temu.com"
+           class="btn-store"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Entrar a Temu"
+           onclick="registrarClicTienda('temu');">
+
+            ⏻
+
+        </a>
 
     </div>
 
+</div>
+<!-- ============================================ -->
+<!-- SHEIN -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!-- TEMU -->
-    <!-- ============================================ -->
+<div class="store shein">
 
-    <div class="store temu">
+    <div class="store-overlay">
 
-        <div class="store-overlay">
-
-            <div class="welcome">
-                <span>WELCOME</span>
-                <strong>TEMU</strong>
-            </div>
-
-            <a href="https://www.temu.com"
-               class="btn-store"
-               target="_blank"
-               rel="noopener noreferrer"
-               title="Entrar a Temu">
-                ⏻
-            </a>
-
+        <div class="welcome">
+            <span>WELCOME</span>
+            <strong>SHEIN</strong>
         </div>
+
+        <a href="https://www.shein.com"
+           class="btn-store"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Entrar a SHEIN"
+           onclick="registrarClicTienda('shein');">
+
+            ⏻
+
+        </a>
 
     </div>
 
+</div>
 
-    <!-- ============================================ -->
-    <!-- SHEIN -->
-    <!-- ============================================ -->
 
-    <div class="store shein">
+<!-- ============================================ -->
+<!-- ROCKAUTO -->
+<!-- ============================================ -->
 
-        <div class="store-overlay">
+<div class="store rockauto">
 
-            <div class="welcome">
-                <span>WELCOME</span>
-                <strong>SHEIN</strong>
-            </div>
+    <div class="store-overlay">
 
-            <a href="https://www.shein.com"
-               class="btn-store"
-               target="_blank"
-               rel="noopener noreferrer"
-               title="Entrar a SHEIN">
-                ⏻
-            </a>
-
+        <div class="welcome">
+            <span>WELCOME</span>
+            <strong>ROCKAUTO</strong>
         </div>
+
+        <a href="https://www.rockauto.com"
+           class="btn-store"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Entrar a RockAuto"
+           onclick="registrarClicTienda('rockauto');">
+
+            ⏻
+
+        </a>
 
     </div>
 
-
-    <!-- ============================================ -->
-    <!-- ROCKAUTO -->
-    <!-- ============================================ -->
-
-    <div class="store rockauto">
-
-        <div class="store-overlay">
-
-            <div class="welcome">
-                <span>WELCOME</span>
-                <strong>ROCKAUTO</strong>
-            </div>
-
-            <a href="https://www.rockauto.com"
-               class="btn-store"
-               target="_blank"
-               rel="noopener noreferrer"
-               title="Entrar a RockAuto">
-                ⏻
-            </a>
-
-        </div>
-
-    </div>
+</div>
 
 
     <!-- ============================================ -->
@@ -356,83 +375,91 @@
 
     </div>
 
+<!-- ============================================ -->
+<!-- HOME DEPOT -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!-- HOME DEPOT -->
-    <!-- ============================================ -->
+<div class="store homedepot">
 
-    <div class="store homedepot">
+    <div class="store-overlay">
 
-        <div class="store-overlay">
-
-            <div class="welcome">
-                <span>WELCOME</span>
-                <strong>HOME DEPOT</strong>
-            </div>
-
-            <a href="https://www.homedepot.com"
-               class="btn-store"
-               target="_blank"
-               rel="noopener noreferrer"
-               title="Entrar a Home Depot">
-                ⏻
-            </a>
-
+        <div class="welcome">
+            <span>WELCOME</span>
+            <strong>HOME DEPOT</strong>
         </div>
+
+        <a href="https://www.homedepot.com"
+           class="btn-store"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Entrar a Home Depot"
+           onclick="registrarClicTienda('homedepot');">
+
+            ⏻
+
+        </a>
 
     </div>
 
+</div>
 
-    <!-- ============================================ -->
-    <!-- ETSY -->
-    <!-- ============================================ -->
 
-    <div class="store etsy">
+<!-- ============================================ -->
+<!-- ETSY -->
+<!-- ============================================ -->
 
-        <div class="store-overlay">
+<div class="store etsy">
 
-            <div class="welcome">
-                <span>WELCOME</span>
-                <strong>ETSY</strong>
-            </div>
+    <div class="store-overlay">
 
-            <a href="https://www.etsy.com"
-               class="btn-store"
-               target="_blank"
-               rel="noopener noreferrer"
-               title="Entrar a Etsy">
-                ⏻
-            </a>
-
+        <div class="welcome">
+            <span>WELCOME</span>
+            <strong>ETSY</strong>
         </div>
+
+        <a href="https://www.etsy.com"
+           class="btn-store"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Entrar a Etsy"
+           onclick="registrarClicTienda('etsy');">
+
+            ⏻
+
+        </a>
 
     </div>
 
+</div>
 
-    <!-- ============================================ -->
-    <!-- LIGHTINTHEBOX -->
-    <!-- ============================================ -->
 
-    <div class="store lightinthebox">
+<!-- ============================================ -->
+<!-- LIGHTINTHEBOX -->
+<!-- ============================================ -->
 
-        <div class="store-overlay">
+<div class="store lightinthebox">
 
-            <div class="welcome">
-                <span>WELCOME</span>
-                <strong>LIGHTINTHEBOX</strong>
-            </div>
+    <div class="store-overlay">
 
-            <a href="https://www.lightinthebox.com"
-               class="btn-store"
-               target="_blank"
-               rel="noopener noreferrer"
-               title="Entrar a LightInTheBox">
-                ⏻
-            </a>
-
+        <div class="welcome">
+            <span>WELCOME</span>
+            <strong>LIGHTINTHEBOX</strong>
         </div>
 
+        <a href="https://www.lightinthebox.com"
+           class="btn-store"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="Entrar a LightInTheBox"
+           onclick="registrarClicTienda('lightinthebox');">
+
+            ⏻
+
+        </a>
+
     </div>
+
+</div>
 
 </div><!-- Fin mall-container -->
 
@@ -507,74 +534,71 @@
     </div>
 
 </section>
+
 <!-- ==================================================
-        ESPACIOS PUBLICITARIOS
+        ESPACIOS PUBLICITARIOS COMERCIALES
 =================================================== -->
 
 <section class="publicidad-container">
 
     <!-- PUBLICIDAD 1 -->
 
-    <div
-        id="publicidad-1"
-        class="publicidad-box"
-    >
+    <div id="publicidad-1" class="publicidad-box">
 
-        <h3>
-            ESPACIO PUBLICITARIO
-        </h3>
+        <div class="anuncio-placeholder">
 
-        <p>
-            Disponible para campañas,
-            promociones y acuerdos comerciales.
-        </p>
+            <span class="publicidad-etiqueta">
+                ESPACIO PUBLICITARIO
+            </span>
+
+            <h3>
+                PROMOCIONA TU EMPRESA
+            </h3>
+
+            <p>
+                Muestra tu producto, servicio o promoción
+                a los visitantes de Mall International Shop.
+            </p>
+
+            <a
+                class="publicidad-contacto"
+                href="mailto:publicidad@mallinternationalshop.com?subject=Solicitud%20de%20publicidad%20en%20Mall%20International%20Shop"
+            >
+                SOLICITAR INFORMACIÓN
+            </a>
+
+        </div>
 
     </div>
 
 
     <!-- PUBLICIDAD 2 -->
 
-    <div
-        id="publicidad-2"
-        class="publicidad-box"
-    >
+    <div id="publicidad-2" class="publicidad-box">
 
-        <h3>
-            ESPACIO PUBLICITARIO
-        </h3>
+        <div class="anuncio-placeholder">
 
-        <p>
-            Próximamente nuevos anunciantes.
-        </p>
+            <span class="publicidad-etiqueta">
+                ESPACIO PUBLICITARIO
+            </span>
 
-    </div>
+            <h3>
+                ANUNCIA AQUÍ
+            </h3>
 
-</section>
+            <p>
+                Disponible para videos, imágenes,
+                promociones y campañas comerciales.
+            </p>
 
+            <a
+                class="publicidad-contacto"
+                href="mailto:publicidad@mallinternationalshop.com?subject=Quiero%20anunciar%20mi%20empresa"
+            >
+                CONTACTAR
+            </a>
 
-<!-- ==================================================
-        BANNER SECUNDARIO
-=================================================== -->
-
-<section id="secondary-banner">
-
-    <div class="secondary-content">
-
-        <h>
-
-        </h2>
-
-        <p>
-
-        
-
-        </p>
-
-        <a href="#">
-
-    
-
-        </a>
+        </div>
 
     </div>
 
@@ -700,6 +724,8 @@
 <script src="js/anuncios.js"></script>
 
 <script src="js/estadisticas.js"></script>
+
+<script src="js/idioma.js"></script>
 
 </body>
 
