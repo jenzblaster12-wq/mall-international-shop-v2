@@ -18,6 +18,10 @@ const IDIOMA_POR_DEFECTO = "es";
 
 const IDIOMAS = {
 
+    //================================================
+    // ESPAÑOL
+    //================================================
+
     es: {
 
         subtitulo:
@@ -39,10 +43,81 @@ const IDIOMAS = {
             "Contacto",
 
         bannerPrincipal:
-            "🔥 Ofertas del Día • Cupones • Envíos Internacionales • Grandes Descuentos"
+            "🔥 Ofertas del Día • Cupones • Envíos Internacionales • Grandes Descuentos",
+
+
+        //================================================
+        // PUBLICIDAD
+        //================================================
+
+        publicidadTitulo:
+            "PUBLICIDAD PATROCINADA",
+
+        publicidadDescripcion:
+            "Este espacio está disponible para empresas, plataformas de comercio electrónico, servicios logísticos y campañas promocionales.",
+
+        publicidadInformacion:
+            "MÁS INFORMACIÓN →",
+
+
+        //================================================
+        // INFORMACIÓN LEGAL
+        //================================================
+
+        descargoTitulo:
+            "🛡 DESCARGO DE RESPONSABILIDAD",
+
+        descargoParrafo1:
+            "MallInternationalShop.com ha sido diseñado para facilitar el acceso a reconocidas plataformas de comercio electrónico internacionales desde un único punto de consulta, permitiendo ahorrar tiempo en la búsqueda de productos y tiendas oficiales.",
+
+        descargoParrafo2:
+            "Este sitio no vende productos, no procesa pagos, ni participa en las transacciones comerciales. Todas las compras, envíos, garantías, devoluciones y reclamaciones deberán gestionarse directamente con la plataforma correspondiente.",
+
+        descargoParrafo3:
+            "Los nombres comerciales, logotipos, marcas registradas e imágenes pertenecen exclusivamente a sus respectivos propietarios y son utilizados únicamente con fines informativos y como referencia hacia sus sitios oficiales.",
+
+
+        //================================================
+        // PROPIEDAD INTELECTUAL
+        //================================================
+
+        propiedadTitulo:
+            "© PROPIEDAD INTELECTUAL",
+
+        propiedadParrafo1:
+            "El concepto, diseño, programación, estructura, identidad visual y contenido original de MallInternationalShop.com constituyen una obra protegida por las leyes nacionales e internacionales sobre propiedad intelectual y derechos de autor.",
+
+        propiedadParrafo2:
+            "Queda prohibida la reproducción total o parcial del diseño, programación, identidad gráfica o contenido de este sitio sin autorización previa y por escrito de su titular.",
+
+
+        //================================================
+        // COPYRIGHT
+        //================================================
+
+        copyright:
+            "© JAVIER2026 Mall International Shop.com",
+
+        derechosReservados:
+            " · Todos los derechos reservados.",
+
+        disenoProtegido:
+            " · Diseño, estructura e identidad visual protegidos por derechos de autor.",
+
+
+        //================================================
+        // CONTACTO
+        //================================================
+
+        contactoLegal:
+            "Contacto:"
 
     },
 
+
+    //==================================================
+    // ENGLISH
+    //==================================================
 
     en: {
 
@@ -65,7 +140,74 @@ const IDIOMAS = {
             "Contact",
 
         bannerPrincipal:
-            "🔥 Daily Deals • Coupons • International Shipping • Great Discounts"
+            "🔥 Daily Deals • Coupons • International Shipping • Great Discounts",
+
+
+        //================================================
+        // ADVERTISING
+        //================================================
+
+        publicidadTitulo:
+            "SPONSORED ADVERTISING",
+
+        publicidadDescripcion:
+            "This space is available for companies, e-commerce platforms, logistics services and promotional campaigns.",
+
+        publicidadInformacion:
+            "MORE INFORMATION →",
+
+
+        //================================================
+        // LEGAL INFORMATION
+        //================================================
+
+        descargoTitulo:
+            "🛡 DISCLAIMER",
+
+        descargoParrafo1:
+            "MallInternationalShop.com has been designed to facilitate access to recognized international e-commerce platforms from a single point of reference, helping users save time when searching for products and official stores.",
+
+        descargoParrafo2:
+            "This website does not sell products, process payments, or participate in commercial transactions. All purchases, shipments, warranties, returns and claims must be handled directly with the corresponding platform.",
+
+        descargoParrafo3:
+            "Trade names, logos, trademarks and images belong exclusively to their respective owners and are used solely for informational purposes and as references to their official websites.",
+
+
+        //================================================
+        // INTELLECTUAL PROPERTY
+        //================================================
+
+        propiedadTitulo:
+            "© INTELLECTUAL PROPERTY",
+
+        propiedadParrafo1:
+            "The concept, design, programming, structure, visual identity and original content of MallInternationalShop.com constitute a work protected by national and international intellectual property and copyright laws.",
+
+        propiedadParrafo2:
+            "Total or partial reproduction of the design, programming, graphic identity or content of this website is prohibited without prior written authorization from its owner.",
+
+
+        //================================================
+        // COPYRIGHT
+        //================================================
+
+        copyright:
+            "© JAVIER2026 Mall International Shop.com",
+
+        derechosReservados:
+            " · All rights reserved.",
+
+        disenoProtegido:
+            " · Design, structure and visual identity protected by copyright.",
+
+
+        //================================================
+        // CONTACT
+        //================================================
+
+        contactoLegal:
+            "Contact:"
 
     }
 
@@ -258,6 +400,44 @@ function actualizarSelectorIdioma(idioma) {
     }
 
 }
+//==================================================
+// ACTIVAR BOTONES DEL SELECTOR DE IDIOMA
+//==================================================
+
+function iniciarSelectorIdioma() {
+
+    const botonesIdioma =
+        document.querySelectorAll(
+            "[data-idioma]"
+        );
+
+
+    botonesIdioma.forEach(boton => {
+
+        boton.addEventListener(
+            "click",
+            function () {
+
+                const idioma =
+                    this.getAttribute(
+                        "data-idioma"
+                    );
+
+
+                cambiarIdioma(idioma);
+
+            }
+        );
+
+    });
+
+
+    console.log(
+        "✔ Selector de idioma preparado."
+    );
+
+}
+
 
 
 //==================================================
@@ -284,12 +464,17 @@ function iniciarIdioma() {
 
 }
 
-
 //==================================================
-// INICIO
+// INICIO DEL SISTEMA
 //==================================================
 
 document.addEventListener(
     "DOMContentLoaded",
-    iniciarIdioma
+    function () {
+
+        iniciarIdioma();
+
+        iniciarSelectorIdioma();
+
+    }
 );

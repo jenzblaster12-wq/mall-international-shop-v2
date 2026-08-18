@@ -1,4 +1,3 @@
-
 <html lang="es">
 
 <head>
@@ -9,109 +8,200 @@
           content="width=device-width, initial-scale=1.0">
 
     <title>Mall International Shop.com</title>
-    
-  <!-- ====================================== -->
-<!-- GOOGLE SEARCH CONSOLE -->
-<!-- Dominio verificado mediante registro TXT -->
-<!-- ====================================== -->
 
-<meta name="google-site-verification"
-      content="nNgl7MikTHpYKaU7D70i8-RGQLGmhh0Eh2I6ZHWCS_o">
-      
-    
-   <!-- Elegant font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- ====================================== -->
+    <!-- GOOGLE SEARCH CONSOLE -->
+    <!-- Dominio verificado mediante registro TXT -->
+    <!-- ====================================== -->
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
-    <!-- ========================= -->
+    <meta name="google-site-verification"
+          content="nNgl7MikTHpYKaU7D70i8-RGQLGmhh0Eh2I6ZHWCS_o">
+
+
+    <!-- ====================================== -->
+    <!-- GOOGLE FONT - CINZEL -->
+    <!-- ====================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- ====================================== -->
     <!-- HOJAS DE ESTILO -->
-    <!-- ========================= -->
+    <!-- ====================================== -->
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+          href="css/style.css">
 
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet"
+          href="css/responsive.css">
 
-    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet"
+          href="css/animation.css">
 
 </head>
 
+
 <body>
-    
+
+
     <!-- ====================================== -->
     <!-- CABECERA -->
     <!-- ====================================== -->
- <header id="header">
 
-    <div class="logo">
-        <div class="title-wrapper">
+    <header id="header">
 
-           <h1 class="titulo-animado">
-            
-              <span>
-                Mall International Shop.com
-        
-              </span>
-         </h1>
-       
-     </div>
 
-        <h2>Tu centro comercial internacional en un solo lugar</h2>
+        <!-- ====================================== -->
+        <!-- LOGO Y PRESENTACIÓN -->
+        <!-- ====================================== -->
 
-        <p class="descripcion">
-            Ingresa directamente a los sitios oficiales, explora,
-            compara y compra en la tienda que más te guste,
-            todo desde una única plataforma.
-        </p>
+        <div class="logo" id="inicio">
 
-    </div>
+            <div class="title-wrapper">
 
-    <nav>
+                <h1 class="titulo-animado">
 
-        <ul>
+                    <span>
+                        Mall International Shop.com
+                    </span>
 
-            <li><a href="#inicio">Inicio</a></li>
+                </h1>
 
-            <li><a href="#mall">Tiendas</a></li>
+            </div>
 
-            <li><a href="#banner">Promociones</a></li>
 
-            <li><a href="#footer">Contacto</a></li>
+            <h2 data-i18n="subtitulo">
+                Tu centro comercial internacional en un solo lugar
+            </h2>
 
-        </ul>
 
-    </nav>
+            <p class="descripcion"
+               data-i18n="descripcion">
 
-</header>
+                Ingresa directamente a los sitios oficiales,
+                explora, compara y compra en la tienda que más
+                te guste, todo desde una única plataforma.
+
+            </p>
+
+        </div>
+
+<!-- ====================================== -->
+<!-- NAVEGACIÓN -->
+<!-- ====================================== -->
+
+<nav>
+
+    <ul>
+
+        <li>
+            <a href="#inicio"
+               data-i18n="inicio">
+                Inicio
+            </a>
+        </li>
+
+        <li>
+            <a href="#mall"
+               data-i18n="tiendas">
+                Tiendas
+            </a>
+        </li>
+
+        <li>
+            <a href="#banner"
+               data-i18n="promociones">
+                Promociones
+            </a>
+        </li>
+
+        <li>
+            <a href="#contacto"
+               data-i18n="contacto">
+                Contacto
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+<!-- ====================================== -->
+<!-- SELECTOR DE IDIOMA -->
+<!-- ====================================== -->
+
+<div class="selector-idioma">
+
+    <button
+        id="btn-es"
+        type="button"
+        data-idioma="es"
+        title="Cambiar idioma a Español">
+
+        🇪🇸 Español
+
+    </button>
+
+
+    <button
+        id="btn-en"
+        type="button"
+        data-idioma="en"
+        title="Change language to English">
+
+        🇺🇸 English
+
+    </button>
+
+</div>
+
+
+    </header>
+
 
     <!-- ====================================== -->
     <!-- BANNER -->
     <!-- ====================================== -->
- <section id="banner">
 
-        <div class="banner-text">
+    <section id="banner">
 
-            🔥 Ofertas del Día • Cupones • Envíos Internacionales • Grandes Descuentos
+        <div class="banner-text"
+             data-i18n="bannerPrincipal">
+
+            🔥 Ofertas del Día • Cupones • Envíos
+            Internacionales • Grandes Descuentos
 
         </div>
 
     </section>
 
-<!-- ====================================== -->
-<!-- CENTRO COMERCIAL -->
-<!-- ====================================== -->
 
-<main id="mall">
-    <div id="mall-container">
+    <!-- ====================================== -->
+    <!-- CENTRO COMERCIAL -->
+    <!-- ====================================== -->
 
-    <!-- Imagen principal del Mall -->
-    <img src="images/fachada/mall.png"
-         alt="Mall International Shop"
-         id="mall-image">
+    <main id="mall">
+
+        <div id="mall-container">
 
 
+            <!-- ====================================== -->
+            <!-- IMAGEN PRINCIPAL DEL MALL -->
+            <!-- ====================================== -->
 
+            <img src="images/fachada/mall.png"
+                 alt="Mall International Shop"
+                 id="mall-image">
+                 
 
 <!-- ============================================ -->
 <!-- AMAZON -->
@@ -601,9 +691,6 @@
         </div>
 
     </div>
-
-</section>
-
 <!-- ====================================== -->
 <!-- INFORMACIÓN PARA ANUNCIANTES -->
 <!-- ====================================== -->
@@ -612,20 +699,25 @@
 
     <div class="advertisers-box">
 
-        <h3>PUBLICIDAD PATROCINADA</h3>
+        <h3 data-i18n="publicidadTitulo">
+            PUBLICIDAD PATROCINADA
+        </h3>
 
-        <p>
+        <p data-i18n="publicidadDescripcion">
             Este espacio está disponible para empresas, plataformas de comercio
             electrónico, servicios logísticos y campañas promocionales.
         </p>
 
-        <a href="mailto:publicidad@mallinternationalshop.com">
+        <a href="mailto:publicidad@mallinternationalshop.com"
+           data-i18n="publicidadInformacion">
             MÁS INFORMACIÓN →
         </a>
 
     </div>
 
 </section>
+
+
 <!-- ====================================== -->
 <!-- INFORMACIÓN LEGAL -->
 <!-- ====================================== -->
@@ -635,58 +727,152 @@
     <details class="legal-box">
 
         <summary>
-            🛡 DESCARGO DE RESPONSABILIDAD
-            <span class="legal-toggle">▼</span>
+
+            <span data-i18n="descargoTitulo">
+                🛡 DESCARGO DE RESPONSABILIDAD
+            </span>
+
+            <span class="legal-toggle">
+                ▼
+            </span>
+
         </summary>
+
 
         <div class="legal-content">
 
-            <p>
-                <strong>MallInternationalShop.com</strong> ha sido diseñado para facilitar el acceso a reconocidas plataformas de comercio electrónico internacionales desde un único punto de consulta, permitiendo ahorrar tiempo en la búsqueda de productos y tiendas oficiales.
-            </p>
+
+            <!-- ================================== -->
+            <!-- DESCRIPCIÓN DEL MALL -->
+            <!-- ================================== -->
 
             <p>
-                Este sitio <strong>no vende productos, no procesa pagos, ni participa en las transacciones comerciales</strong>. Todas las compras, envíos, garantías, devoluciones y reclamaciones deberán gestionarse directamente con la plataforma correspondiente.
+
+                <strong>
+                    MallInternationalShop.com
+                </strong>
+
+                <span data-i18n="descargoParrafo1">
+                    ha sido diseñado para facilitar el acceso a reconocidas
+                    plataformas de comercio electrónico internacionales desde
+                    un único punto de consulta, permitiendo ahorrar tiempo en
+                    la búsqueda de productos y tiendas oficiales.
+                </span>
+
             </p>
+
+
+            <!-- ================================== -->
+            <!-- RESPONSABILIDAD -->
+            <!-- ================================== -->
 
             <p>
-                Los nombres comerciales, logotipos, marcas registradas e imágenes pertenecen exclusivamente a sus respectivos propietarios y son utilizados únicamente con fines informativos y como referencia hacia sus sitios oficiales.
+
+                <span data-i18n="descargoParrafo2">
+                    Este sitio
+                </span>
+
+                <strong data-i18n="descargoParrafo2Fuerte">
+                    no vende productos, no procesa pagos, ni participa en las
+                    transacciones comerciales
+                </strong>.
+
+                <span data-i18n="descargoParrafo2Final">
+                    Todas las compras, envíos, garantías, devoluciones y
+                    reclamaciones deberán gestionarse directamente con la
+                    plataforma correspondiente.
+                </span>
+
             </p>
 
 
+            <!-- ================================== -->
+            <!-- MARCAS -->
+            <!-- ================================== -->
+
+            <p data-i18n="descargoParrafo3">
+
+                Los nombres comerciales, logotipos, marcas registradas e
+                imágenes pertenecen exclusivamente a sus respectivos
+                propietarios y son utilizados únicamente con fines
+                informativos y como referencia hacia sus sitios oficiales.
+
+            </p>
+
+
+            <!-- ================================== -->
             <!-- PROPIEDAD INTELECTUAL -->
+            <!-- ================================== -->
 
             <div class="legal-property">
 
-                <h2>© PROPIEDAD INTELECTUAL</h2>
+                <h2 data-i18n="propiedadTitulo">
+                    © PROPIEDAD INTELECTUAL
+                </h2>
+
 
                 <p>
-                    El concepto, diseño, programación, estructura, identidad visual y contenido original de <strong>MallInternationalShop.com</strong> constituyen una obra protegida por las leyes nacionales e internacionales sobre propiedad intelectual y derechos de autor.
+
+                    <span data-i18n="propiedadParrafo1">
+                        El concepto, diseño, programación, estructura,
+                        identidad visual y contenido original de
+                    </span>
+
+                    <strong>
+                        MallInternationalShop.com
+                    </strong>
+
+                    <span data-i18n="propiedadParrafo1Final">
+                        constituyen una obra protegida por las leyes nacionales
+                        e internacionales sobre propiedad intelectual y
+                        derechos de autor.
+                    </span>
+
                 </p>
 
-                <p>
-                    Queda prohibida la reproducción total o parcial del diseño, programación, identidad gráfica o contenido de este sitio sin autorización previa y por escrito de su titular.
+
+                <p data-i18n="propiedadParrafo2">
+
+                    Queda prohibida la reproducción total o parcial del diseño,
+                    programación, identidad gráfica o contenido de este sitio
+                    sin autorización previa y por escrito de su titular.
+
                 </p>
 
             </div>
 
 
+            <!-- ================================== -->
             <!-- COPYRIGHT -->
+            <!-- ================================== -->
 
             <div class="legal-copyright">
 
-                <strong>© JAVIER2026 Mall International Shop.com</strong>
-                <span> · Todos los derechos reservados.</span>
-                <span> · Diseño, estructura e identidad visual protegidos por derechos de autor.</span>
+                <strong data-i18n="copyright">
+                    © JAVIER2026 Mall International Shop.com
+                </strong>
+
+                <span data-i18n="derechosReservados">
+                    · Todos los derechos reservados.
+                </span>
+
+                <span data-i18n="disenoProtegido">
+                    · Diseño, estructura e identidad visual protegidos por
+                    derechos de autor.
+                </span>
 
             </div>
 
 
+            <!-- ================================== -->
             <!-- CONTACTO -->
+            <!-- ================================== -->
 
-            <div class="legal-contact">
+            <div class="legal-contact" id="contacto">
 
-                <strong>Contacto:</strong>
+                <strong data-i18n="contactoLegal">
+                    Contacto:
+                </strong>
 
                 <a href="mailto:info@mallinternationalshop.com">
                     info@mallinternationalshop.com
@@ -694,11 +880,13 @@
 
             </div>
 
+
         </div>
 
     </details>
 
 </section>
+
 
 <!-- ====================================== -->
 <!-- JAVASCRIPT -->
