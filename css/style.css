@@ -400,6 +400,8 @@ nav ul li a:hover{
     transform:translate(-50%,-50%);
 
     z-index:20;
+    text-decoration:none;
+color:inherit;
 
 }
 
@@ -423,19 +425,36 @@ nav ul li a:hover{
 /*==================================================
         19. WELCOME
 ==================================================*/
+
 .welcome{
 
     text-align:center;
 
-    background:rgba(0,0,0,.55);
+    background:transparent;
 
-    padding:8px 14px;
+    border:1px solid rgba(212,175,55,.35);
+
+    padding:7px 13px;
 
     border-radius:10px;
 
-    backdrop-filter:blur(4px);
+    backdrop-filter:none;
+
+    -webkit-backdrop-filter:none;
+
+    box-shadow:none;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
 
 }
+
+
+/*==================================================
+        TEXTO WELCOME
+==================================================*/
 
 .welcome span{
 
@@ -447,13 +466,20 @@ nav ul li a:hover{
 
     letter-spacing:2px;
 
+    font-family:'Cinzel',serif;
+
 }
+
+
+/*==================================================
+        NOMBRE DE LA TIENDA
+==================================================*/
 
 .welcome strong{
 
     display:block;
 
-    color:var(--color-dorado);
+    color:#ffffff;
 
     font-size:1rem;
 
@@ -463,34 +489,24 @@ nav ul li a:hover{
 
 }
 
+
 /*==================================================
-        20. BOTÓN
+        ILUMINACIÓN AL PASAR EL MOUSE
 ==================================================*/
-.btn-store{
 
-    width:54px;
+.store:hover .welcome{
 
-    height:54px;
+    transform:translateY(-4px);
 
-    border-radius:50%;
+    border-color:rgba(255,255,255,1);
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:1.4rem;
-
-    background:#0d6efd;
-
-    color:#ad1919;
-
-    transition:.30s;
-
-    box-shadow:0 6px 15px rgba(0,0,0,.35);
+    box-shadow:
+        0 0 5px rgba(255,255,255,.90),
+        0 0 12px rgba(255,255,255,.65),
+        0 0 22px rgba(255,255,255,.35);
 
 }
+
 
 /*==================================================
         17. VITRINAS
@@ -523,46 +539,64 @@ nav ul li a:hover{
     align-items:center;
 
 }
-
 /*==================================================
         19. WELCOME
 ==================================================*/
+
 .welcome{
+
     text-align:center;
 
-    background:rgba(0,0,0,.18);
+    background:transparent;
 
-    border:1px solid rgba(230, 229, 222, 0.181);
+    border:1px solid rgba(212, 175, 55, 0.04);
 
-    padding:8px 14px;
+    padding:7px 13px;
 
-    border-radius:12px;
+    border-radius:10px;
 
-    backdrop-filter:blur(2px);
+    backdrop-filter:none;
 
-    -webkit-backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:none;
 
-    box-shadow:0 4px 12px rgba(0,0,0,.20);
+    box-shadow:none;
+
+    transition:
+        transform .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
 
 }
+
+
+/*==================================================
+        TEXTO WELCOME
+==================================================*/
 
 .welcome span{
 
     display:block;
 
-    color:#fffb05;
+    color:#ffffff;
 
     font-size:.72rem;
 
     letter-spacing:2px;
 
+    font-family:'Cinzel',serif;
+
 }
+
+
+/*==================================================
+        NOMBRE DE LA TIENDA
+==================================================*/
 
 .welcome strong{
 
     display:block;
 
-    color:var(--color-dorado);
+    color:#ffffff;
 
     font-size:1rem;
 
@@ -571,6 +605,24 @@ nav ul li a:hover{
     font-family:'Cinzel',serif;
 
 }
+
+
+/*==================================================
+        ILUMINACIÓN AL PASAR EL MOUSE
+==================================================*/
+.store:hover .welcome{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(255,255,255,1);
+
+    box-shadow:
+        0 0 5px rgba(255,255,255,.90),
+        0 0 12px rgba(255,255,255,.65),
+        0 0 22px rgba(255,255,255,.35);
+
+}
+
 
 /*==================================================
         20. BOTÓN
@@ -599,6 +651,8 @@ nav ul li a:hover{
     box-shadow:0 5px 15px rgba(0,0,0,.35);
 
 }
+
+
 /*==================================================
         21. EFECTO HOVER
 ==================================================*/
@@ -608,6 +662,8 @@ nav ul li a:hover{
     transform:scale(1.12);
 
 }
+
+
 /*==================================================
         22. POSICIÓN DE LAS VITRINAS
 ==================================================*/
@@ -702,6 +758,7 @@ nav ul li a:hover{
     left:81%;
 
 }
+
 /*==================================================
         BANNER PUBLICITARIO ANIMADO
 ==================================================*/
