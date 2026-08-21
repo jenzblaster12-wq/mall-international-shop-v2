@@ -89,19 +89,6 @@ img {
 
 
     /*----------------------------------------------
-            BOTONES
-            Conservamos 48px en escritorio.
-            Tablet comienza a reducir.
-    ----------------------------------------------*/
-
-    .btn-store {
-        width: 40px;
-        height: 40px;
-        font-size: 1rem;
-    }
-
-
-    /*----------------------------------------------
             BANNER PUBLICITARIO
     ----------------------------------------------*/
 
@@ -265,18 +252,6 @@ img {
         font-size: .68rem;
     }
 
-
-    /*----------------------------------------------
-            BOTONES
-    ----------------------------------------------*/
-
-    .btn-store {
-        width: 35px;
-        height: 35px;
-        font-size: .90rem;
-    }
-
-
     /*----------------------------------------------
             LIGHTINTHEBOX
     ----------------------------------------------*/
@@ -348,21 +323,6 @@ img {
         font-size: .78rem;
         line-height: 1.28;
     }
-
-
-    /*----------------------------------------------
-            FOOTER
-    ----------------------------------------------*/
-
-    #footer {
-        padding: 16px 12px;
-    }
-
-    #footer p {
-        font-size: .76rem;
-    }
-
-}
 
 
 /*==================================================
@@ -480,21 +440,6 @@ img {
         margin-top: 1px;
     }
 
-
-    /*----------------------------------------------
-            BOTONES
-    ----------------------------------------------*/
-
-    .btn-store {
-        width: 30px;
-        height: 30px;
-
-        font-size: .76rem;
-
-        box-shadow: 0 3px 8px rgba(0,0,0,.30);
-    }
-
-
     /*----------------------------------------------
             POSICIONES MÓVILES
             Las dos primeras filas permanecen
@@ -580,7 +525,7 @@ img {
     }
 
     .lightinthebox .welcome strong {
-        font-size: .45rem;
+        font-size: .50rem;
         letter-spacing: -.4px;
         white-space: nowrap;
     }
@@ -933,29 +878,31 @@ img {
 
     user-select: none;
 }
-
-
-/* Elimina el marcador predeterminado */
-
 #legal .legal-box summary::-webkit-details-marker {
-    display: none;
+    display:none;
 }
 
+#legal .legal-box summary::marker {
+    content:"";
+}
 
 /*==================================================
         FLECHA
 ==================================================*/
 
 .legal-toggle {
-    display: inline-block;
 
-    margin-left: 5px;
+    display:inline-block;
 
-    color: #fffb05;
+    margin-left:5px;
 
-    transition: transform .25s ease;
+    color:#fffb05 !important;
+
+    font-weight:bold;
+
+    transition:transform .25s ease;
+
 }
-
 
 /* Cambia la flecha al abrir */
 
@@ -1055,7 +1002,7 @@ img {
 #legal .legal-copyright strong,
 #legal .legal-copyright span {
 
-    color: #fffb05;
+    color:#fffb05 !important;
 }
 
 
@@ -1087,7 +1034,7 @@ img {
 
 #legal .legal-contact a {
 
-    color: #fffb05;
+    color:#fffb05 !important;
 
     text-decoration: none;
 
@@ -1469,4 +1416,17 @@ img {
     }
 
 }
+/*==================================================
+        CORRECCIÓN FINAL - INFORMACIÓN LEGAL
+==================================================*/
 
+#legal .legal-box summary,
+#legal .legal-box summary span,
+#legal .legal-box .legal-toggle,
+#legal .legal-copyright,
+#legal .legal-copyright strong,
+#legal .legal-copyright span {
+
+    color:#fffb05 !important;
+
+}

@@ -102,7 +102,7 @@ img{
 
     border-bottom:3px solid var(--color-dorado);
 
-    padding:10px 30px;
+    padding:10px 25px;
 
 }
 
@@ -131,7 +131,7 @@ img{
 
     text-align:center;
 
-    letter-spacing:2px;
+    letter-spacing:3px;
 
     text-transform:uppercase;
 
@@ -213,7 +213,7 @@ img{
 
         rgba(255,255,210,.95) 60%,
 
-        rgba(9, 244, 123, 0.704) 80%,
+        #3de38ec9 80%,
 
         transparent 100%
 
@@ -221,7 +221,7 @@ img{
 
     transform:skewX(-25deg);
 
-    animation:reflejoMall 18s infinite;
+    animation:reflejoMall 17s infinite;
 
 }
 
@@ -239,7 +239,7 @@ img{
 
     overflow:hidden;
 
-    animation:tituloMovimiento 18s linear infinite;
+    animation:tituloMovimiento 30s linear infinite;
 
 }
 
@@ -357,7 +357,7 @@ nav ul li a:hover{
 
     width:100%;
 
-    padding:25px 0 40px;
+    padding:30px 0 40px;
 
 }
 
@@ -387,12 +387,12 @@ nav ul li a:hover{
 
     border-radius:10px;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.30);
+    box-shadow:0 10px 30px #4d050504;
 
-}
-/*==================================================
+}/*==================================================
         17. VITRINAS
 ==================================================*/
+
 .store{
 
     position:absolute;
@@ -400,130 +400,18 @@ nav ul li a:hover{
     transform:translate(-50%,-50%);
 
     z-index:20;
+
     text-decoration:none;
-color:inherit;
+
+    color:inherit;
 
 }
+
 
 /*==================================================
         18. OVERLAY
 ==================================================*/
-.store-overlay{
 
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:12px;
-
-}
-
-/*==================================================
-        19. WELCOME
-==================================================*/
-
-.welcome{
-
-    text-align:center;
-
-    background:transparent;
-
-    border:1px solid rgba(212,175,55,.35);
-
-    padding:7px 13px;
-
-    border-radius:10px;
-
-    backdrop-filter:none;
-
-    -webkit-backdrop-filter:none;
-
-    box-shadow:none;
-
-    transition:
-        transform .35s ease,
-        border-color .35s ease,
-        box-shadow .35s ease;
-
-}
-
-
-/*==================================================
-        TEXTO WELCOME
-==================================================*/
-
-.welcome span{
-
-    display:block;
-
-    color:#ffffff;
-
-    font-size:.72rem;
-
-    letter-spacing:2px;
-
-    font-family:'Cinzel',serif;
-
-}
-
-
-/*==================================================
-        NOMBRE DE LA TIENDA
-==================================================*/
-
-.welcome strong{
-
-    display:block;
-
-    color:#ffffff;
-
-    font-size:1rem;
-
-    margin-top:3px;
-
-    font-family:'Cinzel',serif;
-
-}
-
-
-/*==================================================
-        ILUMINACIÓN AL PASAR EL MOUSE
-==================================================*/
-
-.store:hover .welcome{
-
-    transform:translateY(-4px);
-
-    border-color:rgba(255,255,255,1);
-
-    box-shadow:
-        0 0 5px rgba(255,255,255,.90),
-        0 0 12px rgba(255,255,255,.65),
-        0 0 22px rgba(255,255,255,.35);
-
-}
-
-
-/*==================================================
-        17. VITRINAS
-==================================================*/
-.store{
-
-    position:absolute;
-
-    transform:translate(-50%,-50%);
-
-    z-index:20;
-
-}
-
-/*==================================================
-        18. OVERLAY
-==================================================*/
 .store-overlay{
 
     position:absolute;
@@ -539,6 +427,8 @@ color:inherit;
     align-items:center;
 
 }
+
+
 /*==================================================
         19. WELCOME
 ==================================================*/
@@ -549,9 +439,9 @@ color:inherit;
 
     background:transparent;
 
-    border:1px solid rgba(212, 175, 55, 0.04);
+    border:1px solid rgba(255,255,255,.35);
 
-    padding:7px 13px;
+    padding:7px 20px;
 
     border-radius:10px;
 
@@ -608,60 +498,22 @@ color:inherit;
 
 
 /*==================================================
-        ILUMINACIÓN AL PASAR EL MOUSE
+        ILUMINACIÓN DE LA VITRINA
 ==================================================*/
 .store:hover .welcome{
 
-    transform:translateY(-4px);
+    transform:translateY(-1px);
 
-    border-color:rgba(255,255,255,1);
+    border-color:#ffffff;
 
     box-shadow:
-        0 0 5px rgba(255,255,255,.90),
-        0 0 12px rgba(255,255,255,.65),
-        0 0 22px rgba(255,255,255,.35);
+        0 0 6px rgba(255,255,255,1),
+        0 0 14px rgba(255,255,255,.95),
+        0 0 24px rgba(255,255,255,.80),
+        0 0 38px rgba(255,255,255,.45);
 
 }
 
-
-/*==================================================
-        20. BOTÓN
-==================================================*/
-.btn-store{
-
-    width:48px;
-    height:48px;
-
-    border-radius:50%;
-
-    font-size:1.3rem;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    background:#fdf907b2;
-
-    color:rgb(255, 37, 8);
-
-    text-decoration:none;
-
-    transition:.35s;
-
-    box-shadow:0 5px 15px rgba(0,0,0,.35);
-
-}
-
-
-/*==================================================
-        21. EFECTO HOVER
-==================================================*/
-
-.btn-store:hover{
-
-    transform:scale(1.12);
-
-}
 
 
 /*==================================================
@@ -672,29 +524,29 @@ color:inherit;
 
 .amazon{
 
-    top:41%;
-    left:17%;
+    top:40%;
+    left: 19%
 
 }
 
 .jd{
 
-    top:41%;
-    left:39%;
+    top:40%;
+    left:40%;
 
 }
 
 .aliexpress{
 
-    top:42%;
-    left:61%;
+    top:40%;
+    left:60%;
 
 }
 
 .bestbuy{
 
     top:40%;
-    left:83%;
+    left:81%;
 
 }
 
@@ -704,28 +556,28 @@ color:inherit;
 .walmart{
 
     top:61%;
-    left:17%;
+    left:19%;
 
 }
 
 .temu{
 
     top:61%;
-    left:39%;
+    left:40%;
 
 }
 
 .shein{
 
     top:61%;
-    left:61%;
+    left:60%;
 
 }
 
 .rockauto{
 
     top:61%;
-    left:83%;
+    left:80%;
 
 }
 
@@ -733,31 +585,46 @@ color:inherit;
 
 .target{
 
-    top:80%;
+    top:75%;
     left:20%;
 
 }
 
 .homedepot{
 
-    top:79%;
+    top:75%;
     left:41%;
 
 }
 
 .etsy{
 
-    top:80%;
+    top:75%;
     left:61%;
 
 }
-
 .lightinthebox{
 
-    top:80%;
-    left:81%;
+    top:75%;
+    left:80%;
 
 }
+
+.lightinthebox .welcome{
+
+    width:110px;
+
+    box-sizing:border-box;
+
+}
+.lightinthebox .welcome strong{
+
+    font-size:.60rem;
+
+}
+
+
+
 
 /*==================================================
         BANNER PUBLICITARIO ANIMADO
@@ -1031,38 +898,6 @@ color:inherit;
 }
 
 /*==================================================
-        23. FOOTER
-==================================================*/
-
-#FOOTER{
-
-    background:linear-gradient(
-        to bottom,
-        #1b4f82,
-        #163b61
-    );
-
-    color:white;
-
-    text-align:center;
-
-    padding:22px;
-
-    border-top:3px solid var(--color-dorado);
-
-}
-
-#footer p{
-
-    margin:4px 0;
-
-    font-size:.92rem;
-
-    letter-spacing:.5px;
-
-}
-
-/*==================================================
         24. RESPONSIVE
 ==================================================*/
 
@@ -1177,15 +1012,6 @@ color:inherit;
 
     }
 
-    .btn-store{
-
-        width:44px;
-
-        height:44px;
-
-        font-size:1.1rem;
-
-    }
 
 }
 
